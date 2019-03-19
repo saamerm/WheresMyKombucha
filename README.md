@@ -4,7 +4,7 @@ Xamarin.Forms Application that uses Visual Studio (on Mac or Windows) to build i
 ###### Note: Instead of only using LEDs, you can hook up a motor to the D7 pin and effectively turn on and off a minifan with your phone
 
 ## 1. Purpose
-This repository contains the code needed to create a basic Kombucha availability tracker. This is based on another repository I created https://github.com/saamerm/ParticlePhoton-XamarinForms-LEDBasic. Here's the Google presentation url goo.gl/jMipmg and here's the Youtube live-stream goo.gl/CSwJ6f
+This repository contains the code needed to create a basic Kombucha availability tracker. This is based on another repository I created https://github.com/saamerm/ParticlePhoton-XamarinForms-LEDBasic. Here's the Google presentation url https://goo.gl/jMipmg and here's the Youtube live-stream https://goo.gl/CSwJ6f
 
 ## 2. Motivation
 I participated in a lot of hackathons and won a bunch, and learnt to rapidly create nifty things. So, I made this repository to help others reach their dreams and learn to build inventions.
