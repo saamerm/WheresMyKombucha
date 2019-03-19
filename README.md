@@ -27,7 +27,7 @@ Follow instructions in the docs website above, or you can go to this codepen and
 
 ### 3.4 Ready to build that mobile app?
 Once you make sure the device works in the codepen, Fork this repository, Clone it to your computer, and open the solution in Visual Studio.
-In the ParticlePhotonLED.cs file, change the UserID and AccessToken to what you want, and Voila. It should work.
+In the KombuchaPage.cs file, change the UserID and AccessToken to what you want, and Voila. It should work.
 
 ## 4. Doesnt work?
 Email me at i@saamer.me
