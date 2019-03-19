@@ -4,7 +4,6 @@ int digitalValue;
 
 void setup()
 {
-
    pinMode(led1, OUTPUT);
    pinMode(led2, OUTPUT);
 
@@ -13,7 +12,6 @@ void setup()
 
    digitalWrite(led1, LOW);
    digitalWrite(led2, HIGH);
-
 }
 
 void loop()
