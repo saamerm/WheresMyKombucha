@@ -11,7 +11,7 @@ namespace WheresMyKombucha
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CrushFinderPage();
         }
 
         protected override void OnStart()
