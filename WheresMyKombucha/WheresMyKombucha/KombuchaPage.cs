@@ -8,7 +8,7 @@ namespace WheresMyKombucha
 {
     public class KombuchaPage : ContentPage
     {
-        string AccessToken = "e54ec36b6b139319129d8cd075cb88f095a9dce7";
+        string AccessToken = "{YourAccessTokenGoesHere}";
         Label _resultLabel = new Label()
         {
             HorizontalOptions = LayoutOptions.CenterAndExpand
