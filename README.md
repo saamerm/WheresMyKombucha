@@ -20,7 +20,7 @@ They are very similar to Arduino devices in price and function but they also com
 Once you have set up the device and claimed it to your account, go to build.particle.io and login with the account.
 
 ### 3.2 What code do I put on the Microcontroller
-Put in the code from MicroControllerCode.cpp file in this directory, into the Particle Build Web IDE (based on https://docs.particle.io/guide/getting-started/examples/photon/#blink-an-led) and upload it to your device
+Put in the code from MicroControllerCode.cpp file in this directory, into the Particle Build Web IDE (based on https://docs.particle.io/tutorials/hardware-projects/hardware-examples/photon/) and upload it to your device
 
 ### 3.3 How do I know that I set up the correctly
 Follow instructions in the docs website above, or you can go to this codepen and change the UserID and AccessToken https://codepen.io/saamerm/pen/wOxpLm and try to change the status to true. If the light goes on, you're in business.
