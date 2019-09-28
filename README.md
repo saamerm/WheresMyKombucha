@@ -29,8 +29,20 @@ Follow instructions in the docs website above, or you can go to this codepen and
 Once you make sure the device works in the codepen, Fork this repository, Clone it to your computer, and open the solution in Visual Studio.
 In the KombuchaPage.cs file, change the UserID and AccessToken to what you want, and Voila. It should work.
 
-## 4. Doesnt work?
+## 4. Connect with a Raspberry Pi?
+You asked for it and you have been heard! To follow the instructions below, you don't need to have completed any of the steps above.
+### 4.1 Setup the Raspberry Pi
+1. Make sure you have the Raspbian OS installed on your Pi, and you are connected to the internet. 
+2. Open your terminal and run this command to install the particle library `bash <( curl -sL https://particle.io/install-pi )`. 
+3. If you don't have one, create a Particle account at https://login.particle.io/signup.
+4. Add your raspberry pi to your account to the Particle Cloud using the terminal `particle-agent setup`
+5. Go to the `build.particle.io` and copy the code from the BlinkAnLED.cpp file, into your Web IDE. Save, Compile and Flash. You will notice that an LED next to the power LED is blinking as per your code
+6. Once you have this, you can copy over the MicroControllerCode.cpp code from this report, into your Web IDE. Save, Compile and Flash. 
+
 Email me at i@saamer.me
 
-## 5. Bonus
+## 5. Doesnt work?
+Email me at i@saamer.me
+
+## 6. Bonus
 Control the device with an Android watch! :) https://github.com/saamerm/Xamarin.Android-Wear-2.0-IpInfo-Rest-Api-Get
