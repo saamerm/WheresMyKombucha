@@ -52,9 +52,9 @@ Email me at i@saamer.me
 ## 7. Some Images
 
 1. Blink an Led with Particle Photon
-![Particle Photon playing Blink an LED in the On Status](ScreenshotsAndImages/IMG_0822.png)
-![Particle Photon playing Blink an LED in the Off Status](ScreenshotsAndImages/IMG_0824.png)
+![Particle Photon playing Blink an LED in the On Status](ScreenshotsAndImages/IMG_0822.JPG)
+![Particle Photon playing Blink an LED in the Off Status](ScreenshotsAndImages/IMG_0824.JPG)
 
-2. Measure temperature and humidity with Particle Photon ![Particle Photon connected to Digital Humidity and Temperature sensor](ScreenshotsAndImages/IMG_0808.png)
+2. Measure temperature and humidity with Particle Photon ![Particle Photon connected to Digital Humidity and Temperature sensor](ScreenshotsAndImages/IMG_0808.JPG)
 
-3. Raspberry Pi connected to Kombucha Status Tracker ![Raspberry Pi Pin connections](ScreenshotsAndImages/IMG_8805.png)
+3. Raspberry Pi connected to Kombucha Status Tracker ![Raspberry Pi Pin connections](ScreenshotsAndImages/IMG_8805.JPG)
