@@ -4,7 +4,7 @@ Xamarin.Forms Application that uses Visual Studio (on Mac or Windows) to build i
 ###### Note: Instead of only using LEDs, you can hook up a motor to the D7 pin and effectively turn on and off a minifan with your phone
 
 ## 1. Purpose
-This repository contains the code needed to create a basic Kombucha availability tracker. This is based on another repository I created https://github.com/saamerm/ParticlePhoton-XamarinForms-LEDBasic. Here's the Google presentation url https://goo.gl/jMipmg and here's the Youtube live-stream https://goo.gl/CSwJ6f
+This repository contains the code needed to create a basic Kombucha availability tracker. This is based on another repository I created named [ParticlePhoton-XamarinForms-LEDBasic](https://github.com/saamerm/ParticlePhoton-XamarinForms-LEDBasic). Here's the [Google presentation url](https://goo.gl/jMipmg) from a Toronto Xamarin User group and here's the [Youtube live-stream](https://goo.gl/CSwJ6f). I presented and extended this at the MonkeyFestLatam on September 2019 when I included the ability to control Raspberry Pis as well, and [here's the presentation](https://tinyurl.com/y2she93s)
 
 ## 2. Motivation
 I participated in a lot of hackathons and won a bunch, and learnt to rapidly create nifty things. So, I made this repository to help others reach their dreams and learn to build inventions.
@@ -35,14 +35,26 @@ You asked for it and you have been heard! To follow the instructions below, you 
 1. Make sure you have the Raspbian OS installed on your Pi, and you are connected to the internet. 
 2. Open your terminal and run this command to install the particle library `bash <( curl -sL https://particle.io/install-pi )`. 
 3. If you don't have one, create a Particle account at https://login.particle.io/signup.
-4. Add your raspberry pi to your account to the Particle Cloud using the terminal `particle-agent setup`
-5. Go to the `build.particle.io` and copy the code from the BlinkAnLED.cpp file, into your Web IDE. Save, Compile and Flash. You will notice that an LED next to the power LED is blinking as per your code
-6. Once you have this, you can copy over the MicroControllerCode.cpp code from this report, into your Web IDE. Save, Compile and Flash. 
+4. Add your raspberry pi to your account to the Particle Cloud using the terminal `particle-agent setup`, and provide your username and password credentials when prompted.
+5. Go to the `build.particle.io` and copy the code from the BlinkAnLED.cpp file, into your Web IDE. Change the Device in the IDE to the raspberry pi, Save, Compile and Flash. You will notice that an LED next to the power LED is blinking as per your code
+6. Once you have this, you can copy over the MicroControllerCode.cpp code from this report, into your Web IDE. Save, Compile and Flash. Make sure you use a Pin-Out diagram like the one below to make sure you have the right connections.
 
-Email me at i@saamer.me
+![Raspberry Pi Pin Out Diagram](ScreenshotsAndImages/pi-pinout-diagram.png)
+
 
 ## 5. Doesnt work?
 Email me at i@saamer.me
 
 ## 6. Bonus
-Control the device with an Android watch! :) https://github.com/saamerm/Xamarin.Android-Wear-2.0-IpInfo-Rest-Api-Get
+
+1. Control the device with an Android watch! :) https://github.com/saamerm/Xamarin.Android-Wear-2.0-IpInfo-Rest-Api-Get
+
+## 7. Some Images
+
+1. Blink an Led with Particle Photon
+![Particle Photon playing Blink an LED in the On Status](ScreenshotsAndImages/IMG_0822.png)
+![Particle Photon playing Blink an LED in the Off Status](ScreenshotsAndImages/IMG_0824.png)
+
+2. Measure temperature and humidity with Particle Photon ![Particle Photon connected to Digital Humidity and Temperature sensor](ScreenshotsAndImages/IMG_0808.png)
+
+3. Raspberry Pi connected to Kombucha Status Tracker ![Raspberry Pi Pin connections](ScreenshotsAndImages/IMG_8805.png)
