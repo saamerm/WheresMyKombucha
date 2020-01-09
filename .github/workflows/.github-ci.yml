@@ -15,6 +15,16 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: Create a tree
+      run: |
+        tree
+    - name: Show what in there
+      run: |
+        ls
+    - name: Show what it's inside
+      run: |
+        cd ..
+        ls
 
   Android:
 
@@ -66,5 +76,4 @@ jobs:
       
     - name: iOS
       run: |
-        nuget restore
         msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
