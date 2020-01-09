@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
 
-    runs-on: macOS-latest
+    runs-on: macos-latest
     
     steps:
     - uses: actions/checkout@v1
@@ -18,7 +18,7 @@ jobs:
 
   Android:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     
     steps:
 
@@ -32,13 +32,26 @@ jobs:
 
   Android2:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     
     steps:
 
     - uses: actions/checkout@v1
       
     - name: Android2
+      run: |
+        nuget restore
+        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:PackageForAndroid /t:SignAndroidPackage /p:Configuration=QA /p:AndroidKeyStore=True /p:DefineConstants='"XAMARIN_UI_TESTS;__MOBILE__;__ANDROID__;QA_MODE;"'
+
+  Android3:
+
+    runs-on: macos-latest
+    
+    steps:
+
+    - uses: actions/checkout@v1
+      
+    - name: Android3
       run: |
         nuget restore
         msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:PackageForAndroid /t:SignAndroidPackage /p:Configuration=QA /p:AndroidKeyStore=True /p:DefineConstants='"XAMARIN_UI_TESTS;__MOBILE__;__ANDROID__;QA_MODE;"'
@@ -54,4 +67,4 @@ jobs:
     - name: iOS
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Build /p:Platform=iPhoneSimulator /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
