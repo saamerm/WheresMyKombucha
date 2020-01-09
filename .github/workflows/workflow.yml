@@ -13,4 +13,4 @@ jobs:
       
     - name: Build
       run: |
-        msbuild WheresMyKombucha/WheresMyKombucha.sln
+        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Build /p:Platform=iPhoneSimulator /p:Configuration=Debug
