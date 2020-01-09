@@ -27,7 +27,7 @@ jobs:
     - name: Android
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:PackageForAndroid /t:SignAndroidPackage /p:Configuration=QA /p:AndroidKeyStore=True /p:DefineConstants='"XAMARIN_UI_TESTS;__MOBILE__;__ANDROID__;QA_MODE;"'
+        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
         msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
 
   Android2:
@@ -41,7 +41,7 @@ jobs:
     - name: Android2
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:PackageForAndroid /t:SignAndroidPackage /p:Configuration=QA /p:AndroidKeyStore=True /p:DefineConstants='"XAMARIN_UI_TESTS;__MOBILE__;__ANDROID__;QA_MODE;"'
+        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
 
   Android3:
 
@@ -54,7 +54,7 @@ jobs:
     - name: Android3
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:PackageForAndroid /t:SignAndroidPackage /p:Configuration=QA /p:AndroidKeyStore=True /p:DefineConstants='"XAMARIN_UI_TESTS;__MOBILE__;__ANDROID__;QA_MODE;"'
+        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
 
   iOS:
 
@@ -67,4 +67,4 @@ jobs:
     - name: iOS
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
