@@ -34,8 +34,8 @@ jobs:
     - name: Android
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
-        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.sln /verbosity:normal /t:Rebuild /p:Configuration=Debug
 
   Android2:
 
@@ -48,7 +48,7 @@ jobs:
     - name: Android2
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
 
   Android3:
 
@@ -61,7 +61,7 @@ jobs:
     - name: Android3
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.sln /verbosity:normal /t:Rebuild /p:Configuration=Debug
 
   iOS:
 
@@ -73,4 +73,16 @@ jobs:
       
     - name: iOS
       run: |
-        msbuild WheresMyKombucha/WheresMyKombucha.sln $BUILD_VERBOSITY /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.sln /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
+
+  iOS2:
+
+    runs-on: macos-latest
+    
+    steps:
+
+    - uses: actions/checkout@v1
+      
+    - name: iOS2
+      run: |
+        msbuild WheresMyKombucha/WheresMyKombucha.iOS/WheresMyKombucha.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
