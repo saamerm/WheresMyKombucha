@@ -34,8 +34,7 @@ jobs:
     - name: Android
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
-        msbuild WheresMyKombucha/WheresMyKombucha.sln /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha/WheresMyKombucha.Droid/WheresMyKombucha.Droid.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
 
   Android2:
 
@@ -48,7 +47,7 @@ jobs:
     - name: Android2
       run: |
         nuget restore
-        msbuild WheresMyKombucha/WheresMyKombucha.Android/WheresMyKombucha.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        msbuild WheresMyKombucha.Droid/WheresMyKombucha.Droid.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
 
   Android3:
 
