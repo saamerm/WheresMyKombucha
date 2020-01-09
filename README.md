@@ -58,3 +58,7 @@ Email me at i@saamer.me
 2. Measure temperature and humidity with Particle Photon ![Particle Photon connected to Digital Humidity and Temperature sensor](ScreenshotsAndImages/IMG_0808.JPG)
 
 3. Raspberry Pi connected to Kombucha Status Tracker ![Raspberry Pi Pin connections](ScreenshotsAndImages/IMG_8805.JPG)
+
+## 8. DevOps
+
+* Added a workflow.yml file to make sure the project builds
