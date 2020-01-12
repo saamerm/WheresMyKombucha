@@ -42,4 +42,3 @@ jobs:
         cd WheresMyKombucha
         nuget restore
         msbuild WheresMyKombucha.iOS/WheresMyKombucha.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
-view rawmain.yml hosted with ❤ by GitHub
